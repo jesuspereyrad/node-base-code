@@ -1,0 +1,44 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Node base structure server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "dev": "export $(cat .env.dev | grep \"^[^#;]\" |xargs) && nodemon src/server.js",
+    "qa": "nodemon -r dotenv/config src/server.js dotenv_config_path=.env.qa",
+    "build": "nodemon -r dotenv/config src/server.js dotenv_config_path=.env.prod",
+    "staging": "nodemon src/server.js",
+    "test": "jest --env=node",
+    "lint": "eslint src/js"
+  },
+  "author": "Jesus Pereyra",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "easy-soap-request": "^3.3.3",
+    "express": "^4.17.1",
+    "global": "^4.4.0",
+    "newrelic": "^6.13.0",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "eslint": "^6.8.0",
+    "http-errors": "^1.7.3",
+    "jade": "^1.11.0",
+    "jest": "^26.0.1",
+    "mongoose": "^5.9.2",
+    "morgan": "^1.9.1"
+  },
+  "jest": {
+    "setupFiles": [
+      "./jestConfig.js"
+    ]
+  },
+  "testEnvironment": "node"
+}
