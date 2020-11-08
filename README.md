@@ -1,5 +1,7 @@
 # Node Server Sckeleton
+## Architecture
 
+This is a mircoservice application system, were we decouple every module in a way that services dont know each other in the core service, but every new service have a connector file that sets the way microservices can interact. 
 
 ## Project Structure
 
@@ -33,12 +35,7 @@ Script to run different environment
  * DEV `npm run dev` 
  * QA `npm run qa`
  * PROD `npm run build`
- 
 
-## Architecture
-
-This is a mircoservice application system, were we decouple every module in a way that services dont know each other in the core service, but every new service have a connector file that sets the way microservices can interact. 
-This project connect (watson assistant, facebook messenger and an orchestrator in nodejs) by configurations file.
 
 ## Architecture views
 
