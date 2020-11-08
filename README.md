@@ -37,13 +37,6 @@ Script to run different environment
  * PROD `npm run build`
 
 
-## Architecture views
-
-* [Context View](https://drive.google.com/open?id=1TtiJi8aQNZ5esZzPIW4MyjwZFv2okeSk)
-* [Component View](https://drive.google.com/open?id=1qK3m0pECUEZK-wQYTvJbsfbXalIC1vl_)
-* [Environment View](https://drive.google.com/open?id=1LdhhIqNW4E7QOfWerw5E-Rv0CM67OCwA)
-* [Deployment View](https://drive.google.com/open?id=1pUta9XNpeII044Ru0xDjwmRF6TKpFSYb)
-
 ## Structure of Orchestrator
 
 MCS (Model-Controller-Services) for the api in nodeJS. Each folder has a readme explaining his functionality in the project.
